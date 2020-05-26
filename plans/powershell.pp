@@ -3,4 +3,5 @@ plan dev_provisioner::powershell(
   Optional[String] $repo,
 ) {
   run_task('dev_provisioner::choco_install', $targets)
+  run_task('dev_provisioner::choco_install_packages', $targets)
 }

@@ -1,0 +1,1 @@
+choco install git vscode hub -y

@@ -1,0 +1,8 @@
+{
+  "puppet_task_version": 1,
+  "supports_noop": false,
+  "input_method": "powershell",
+  "description": "Install a predefined list of chocolatey packages",
+  "parameters": {
+  }
+}
