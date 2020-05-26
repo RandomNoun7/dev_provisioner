@@ -6,7 +6,7 @@
   "license": "MIT",
   "source": "git@github.com:RandomNoun7/dev_provisioner.git",
   "dependencies": [
-
+    {"name": "puppetlabs/chocolatey", "version_requirement": ">= 5.0.0"}
   ],
   "operatingsystem_support": [
     {
