@@ -1,1 +1,1 @@
-choco install git vscode hub -y
+choco install git vscode hub cascadiacodepl -y

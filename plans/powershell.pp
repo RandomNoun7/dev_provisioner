@@ -9,6 +9,7 @@ plan dev_provisioner::powershell(
   run_command('Install-Module -Name Posh-Git, Emojis, Terminal-Icons -Force -Scope AllUsers', $targets)
   run_task('dev_provisioner::font_smoothing', $targets)
   run_task('dev_provisioner::set_profile_content', $targets)
+  run_task('dev_provisioner::vscode_settings', $targets)
   run_task('dev_provisioner::set_git_config', $targets)
   run_command('Set-Content c:/users/administrator/.ssh/config -value "Host github.com`n`tStrictHostKeyChecking no`n"', $targets)
   if $repo {
