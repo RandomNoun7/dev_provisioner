@@ -83,8 +83,8 @@ function hostsfile {
 }
 '@
 
-if (!(Test-Path C:\Users\Administrator\Documents\PowerShell\profile.ps1)) {
-  New-Item C:\Users\Administrator\Documents\PowerShell\profile.ps1 -ItemType File -Force
+if (!(Test-Path C:\Users\Administrator\Documents\WindowsPowerShell\profile.ps1)) {
+  New-Item C:\Users\Administrator\Documents\WindowsPowerShell\profile.ps1 -ItemType File -Force
 }
 
-Set-Content -Path C:\Users\Administrator\Documents\PowerShell\profile.ps1 -Value $profile_content -Force
+Set-Content -Path C:\Users\Administrator\Documents\WindowsPowerShell\profile.ps1 -Value $profile_content -Force
