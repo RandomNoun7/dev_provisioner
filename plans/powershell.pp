@@ -4,6 +4,6 @@ plan dev_provisioner::powershell(
 ) {
   run_task('dev_provisioner::choco_install', $targets)
   run_task('dev_provisioner::choco_install_packages', $targets)
-  run_task('dev_provisioner::add_hub_alias', $targets)
-  upload_file('c:/users/Bill Hurt/.ssh/id_rsa', 'c:/users/administrator/.ssh/id_rsa')
+  upload_file('c:/users/Bill Hurt/.ssh/id_rsa', 'c:/users/administrator/.ssh/id_rsa', $targets)
+  run_task('dev_provisioner::font_smoothing', $targets)
 }

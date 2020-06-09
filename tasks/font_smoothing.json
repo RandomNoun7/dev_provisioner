@@ -2,7 +2,7 @@
   "puppet_task_version": 1,
   "supports_noop": false,
   "input_method": "powershell",
-  "description": "A short description of this task",
+  "description": "Enable Font Smoothing.",
   "parameters": {
   }
 }
