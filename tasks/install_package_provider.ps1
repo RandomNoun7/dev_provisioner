@@ -50,3 +50,5 @@ $psrepoxml = @"
 "@
 
 Set-Content 'C:\Users\Administrator\AppData\Local\Microsoft\Windows\PowerShell\PowerShellGet\PSRepositories.xml' -value $psrepoxml -force
+
+Install-Module -Name PowerShellGet -RequiredVersion 1.6.5 -Force
