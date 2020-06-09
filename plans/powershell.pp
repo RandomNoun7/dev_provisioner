@@ -8,5 +8,5 @@ plan dev_provisioner::powershell(
   run_task('dev_provisioner::install_package_provider', $targets)
   run_command('Install-Module -Name Posh-Git, Emojis, Terminal-Icons -Force', $targets)
   run_task('dev_provisioner::font_smoothing', $targets)
-  upload_file('files/profile.ps1', 'c:/users/administrator/Documents/PowerShell/profile.ps1')
+  run_task('dev_provisioner::set_profile_content', $targets)
 }
