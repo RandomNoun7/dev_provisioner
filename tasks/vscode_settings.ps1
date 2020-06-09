@@ -23,7 +23,7 @@ $content = @'
     "editor.rulers": [
         80
     ],
-    "editor.fontFamily": "'Cascadia Code PL' ,Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'CaskaydiaCove Nerd Font' ,Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "gitlens.keymap": "chorded",
     "editor.tabSize": 2,
@@ -70,7 +70,7 @@ $content = @'
         "ssh",
         "users"
     ],
-    "terminal.integrated.fontFamily": "Cascadia Code PL",
+    "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
     "breadcrumbs.enabled": true,
     "files.associations": {
         ".remote": "json"
@@ -133,7 +133,7 @@ $content = @'
     "git.ignoreLegacyWarning": true,
     "workbench.iconTheme": "vscode-great-icons",
     "git.enableStatusBarSync": false,
-    "debug.console.fontFamily": "Cascadia Code PL",
+    "debug.console.fontFamily": "CaskaydiaCove Nerd Font",
     "terminal.integrated.cursorBlinking": true,
     "files.eol": "\n",
     "yaml.schemas": {
@@ -186,4 +186,4 @@ $content = @'
   }
 '@
 
-Set-Content C:\Users\Administrator\AppData\Roaming\APPDATA\Code\User\Settings.json -value $content
+Set-Content C:\Users\Administrator\AppData\Roaming\Code\User\settings.json -value $content
