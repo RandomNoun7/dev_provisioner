@@ -6,6 +6,7 @@ $GitPromptSettings.DefaultForegroundColor = 'yellow'
 $GitPromptSettings.BeforeForegroundColor = 'cyan'
 $GitPromptSettings.AfterForegroundColor = 'cyan'
 
+remove-item env:\GIT_EDITOR -force -errorAction SilentlyContinue
 
 function branch {
     param (
