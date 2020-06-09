@@ -1,6 +1,6 @@
 plan dev_provisioner::powershell(
   TargetSpec $targets,
-  # Optional[String] $repo,
+  Optional[String] $repo = undef,
 ) {
   run_task('dev_provisioner::choco_install', $targets)
   run_task('dev_provisioner::choco_install_packages', $targets)
@@ -9,4 +9,7 @@ plan dev_provisioner::powershell(
   run_command('Install-Module -Name Posh-Git, Emojis, Terminal-Icons -Force -Scope AllUsers', $targets)
   run_task('dev_provisioner::font_smoothing', $targets)
   run_task('dev_provisioner::set_profile_content', $targets)
+  if $repo {
+    run_command("cd c:\\ ; hub clone ${repo}", $targets)
+  }
 }
